@@ -10,4 +10,4 @@ clean_up_desktop.py is a small efficiency scrip to help you organize your files.
 Customize the script by adding:
 - self.username = "yourusername"
 - self.do_not_move = ["Download", "old_folders", ...(list of folders or files)]
-- Run the script from teminal like python clean_up_py (or preferably create a shortcut with alias)
+- Run the script from teminal like python clean_up_desktop.py (or preferably create a shortcut with alias)
