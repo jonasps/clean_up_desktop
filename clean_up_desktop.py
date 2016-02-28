@@ -24,8 +24,7 @@ class Desktop_organizer:
 		foldername = time.strftime("%m-%d-%Y-%s") 
 		if not os.path.exists(self.desktop_path+"old_folders"):
 			os.makedirs(self.desktop_path+"old_folders")
-		if not os.path.exists(self.desktop_path+foldername):
-			os.makedirs(self.desktop_path+"old_folders/"+foldername)
+		os.makedirs(self.desktop_path+"old_folders/"+foldername)
 		return self.desktop_path+"old_folders/"+foldername
 
 	def move_stuff_from_desktop(self):
