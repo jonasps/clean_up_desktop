@@ -12,11 +12,12 @@ class Desktop_organizer:
     def __init__(self, *args):
         self.place = "Desktop"
         self.username = getpass.getuser()
-        self.do_not_move = ["Download", "webDownload", "customer","old_folders"]
+        # add files or folders that you don't want to move
+        self.do_not_move = ["Download", "webDownload", "customer"]
         for arg in args:
-            # add file or foldernames that you don't want to move
             self.do_not_move.append(arg)
         print("Not moving:")
+        self.do_not_move.append("old_folders")
         print(self.do_not_move)
         self.desktop_path ="/Users/"+self.username+"/"+self.place+"/"
 
