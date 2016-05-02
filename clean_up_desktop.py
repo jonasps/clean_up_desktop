@@ -3,6 +3,7 @@
 
 import os
 import glob
+import getpass
 import time
 import shutil
 
@@ -10,7 +11,7 @@ class Desktop_organizer:
     """This class moves files and folders into a directory called old_folders"""
     def __init__(self, *args):
         self.place = "Desktop"
-        self.username = "jonassandstrom"
+        self.username = getpass.getuser()
         self.do_not_move = ["Download", "webDownload", "customer","old_folders"]
         for arg in args:
             # add file or foldernames that you don't want to move
